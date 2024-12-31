@@ -1,0 +1,44 @@
+@use '../styles/src/palette';
+
+header {
+    padding: 40px 0;
+
+    button {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        border: 0;
+        background: transparent;
+        appearance: none;
+        -webkit-appearance: none;
+    }
+}
+
+.cs-content {
+    padding-bottom: 32px;
+
+    h3 {
+        font-weight: 300;
+        line-height: 140%;
+        margin: 56px auto 16px;
+    }
+
+    p {
+        margin-bottom: 16px;
+    }
+
+    a {
+        color: palette.$primary-400;
+    }
+
+    .gatsby-resp-image-wrapper {
+        margin: 32px auto;
+    }
+
+    img {
+
+        &.gatsby-resp-image-image {
+            height: 350px;
+        }
+    }
+}

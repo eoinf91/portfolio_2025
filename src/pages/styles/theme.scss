@@ -1,0 +1,186 @@
+// Colours
+@use 'src/primary';
+@use 'src/secondary';
+@use 'src/accent';
+@use 'src/neutral';
+
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+// Typography styles
+h1 {
+    color: primary.$main;
+    font-family: "Epilogue", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.05rem;
+    line-height: 140%;
+    font-size: 40px;
+}
+
+h2 {
+    color: accent.$main;
+    font-family: "Epilogue", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: 0.2rem;
+    line-height: 100%;
+    font-size: 80px;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: primary.$main;
+    font-family: "Epilogue", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    line-height: 120%;
+    font-size: 32px;
+}
+
+h4 {
+    color: primary.$main;
+    font-family: "Epilogue", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.1%;
+    line-height: 140%;
+    font-size: 32px;
+}
+
+h5 {
+    color: neutral.$main;
+    font-family: "Epilogue", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 3px;
+    line-height: 100%;
+    font-size: 12px;
+    text-transform: uppercase;
+
+    &.primary {
+        color: primary.$main;
+    }
+
+    &.secondary {
+        color: secondary.$main;
+    }
+}
+
+p, li {
+    color: neutral.$main;
+    font-family: "Epilogue", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    line-height: 140%;
+    font-size: 16px;
+
+    &.large {
+        font-size: 20px;
+        color: secondary.$main;
+    }
+
+    &.small {
+        font-size: 12px;
+        color: neutral.$main;
+        letter-spacing: 4%;
+    }
+
+    &.xl {
+        font-size: 24px;
+        color: primary.$main;
+        letter-spacing: 1%;
+        font-weight: 500;
+    }
+}
+
+a, button {
+    color: secondary.$main;
+    font-family: "Epilogue", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 4%;
+    line-height: 140%;
+    font-size: 16px;
+    display: block;
+    width: fit-content;
+}
+
+// General styles
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+
+    &:hover {
+        cursor: pointer;
+        color: secondary.$dark;
+        transition: all 0.5s ease-in-out;
+
+        svg {
+            fill: secondary.$dark;
+            transition: all 0.5s ease-in-out;
+        }
+    }
+}
+
+body {
+    background-color: accent.$light;
+}
+
+hr {
+    width: 100%;
+    border: 0.5px solid secondary.$light;
+    margin: 40px auto;
+}
+
+main {
+    max-width: 894px;
+    margin: auto;
+}
+
+ul {
+    padding: 0 16px;
+
+    li {
+        margin: 8px 0;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+
+    p {
+
+        &.small {
+            color: primary.$main;
+            font-weight: 400;
+            line-height: 132%;
+            letter-spacing: 0.5px;
+        }
+    }
+
+    a {
+        color: primary.$main;
+        font-weight: 400;
+        line-height: 132%;
+        letter-spacing: 0.5px;
+        text-decoration: none;
+        font-size: 12px;
+    }
+}

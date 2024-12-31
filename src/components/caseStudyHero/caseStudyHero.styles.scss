@@ -1,0 +1,32 @@
+.cs-hero {
+    
+    .heading {
+        padding-bottom: 32px;
+
+        h5 {
+            margin-bottom: 8px;
+        }
+    }
+
+    .detail {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        .item {
+            width: max-content;
+            max-width: 246px;
+
+            h5 {
+                margin-bottom: 8px;
+            }
+
+            a {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            }
+        }
+    }
+}
