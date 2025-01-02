@@ -139,6 +139,11 @@ button {
 
 body {
     background-color: accent.$light;
+    padding: 16px;
+
+    @media (min-width: 800px) {
+        padding: 0;
+    }
 }
 
 hr {

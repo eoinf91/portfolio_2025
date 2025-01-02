@@ -12,10 +12,17 @@
         display: flex;
         justify-content: space-between;
         flex-direction: row;
+        flex-wrap: wrap;
 
         .item {
-            width: max-content;
+            width: 50%;
             max-width: 246px;
+            margin: 16px auto;
+
+            @media (min-width: 800px) {
+                width: max-content;
+                margin: auto;
+            }
 
             h5 {
                 margin-bottom: 8px;
